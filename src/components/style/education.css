@@ -1,0 +1,73 @@
+/* src/components/style/education.css */
+
+.education-container {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.education-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.education-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.education-card h3 {
+    font-size: 1.5rem;
+    color: #1e293b;
+    margin: 0 0 5px 0;
+}
+
+.institution-name {
+    font-size: 1.1rem;
+    color: #2563eb;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.education-period {
+    display: inline-block;
+    background: #f1f5f9;
+    color: #475569;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.education-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .education-container {
+        padding: 40px 15px;
+    }
+}
