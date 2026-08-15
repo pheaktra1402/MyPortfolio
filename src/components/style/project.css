@@ -1,5 +1,6 @@
 h2{
-    color: rgb(236, 71, 99);
+    margin: 30px;
+    color: blue;
     font-size: 2rem;
 }
 
@@ -20,6 +21,7 @@ h2{
 
 /* 2-Column Grid for all 4 cards */
 .project-grid {
+    margin: 0 20px 0 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 35px;

@@ -45,8 +45,8 @@ function Projects() {
   
   ];
   return(
-<section id="projects" style={{ padding: '20px 10px', maxWidth: '1000px', width: '100%', margin: '0 auto', boxSizing: 'border-box' }}>
-      <h2>Featured Projects</h2>
+<section id="projects" className="projects-section">
+      <h2>| My Projects</h2>
      <div className="project-grid">
   {projectLists.map((project, index) => (
     <div key={index} className="project-card">
