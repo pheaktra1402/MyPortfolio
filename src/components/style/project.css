@@ -1,0 +1,119 @@
+h2{
+    color: rgb(236, 71, 99);
+    font-size: 2rem;
+}
+
+.projects-container {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.projects-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 2.5rem;
+}
+
+/* 2-Column Grid for all 4 cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #ffffff; /* Clean white background to fit website screenshots perfectly */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    aspect-ratio: 16 / 10; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* USE 'contain' SO THE ENTIRE PICTURE SHOWS FULLY WITHOUT CUTTING SIDES */
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: block;
+    padding: 4px; /* Tiny padding so it doesn't touch the exact border */
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.03);
+}
+
+/* Smooth dark overlay for the description on hover */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.94);
+    color: #fff;
+    padding: 35px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+/* Modern Buttons */
+.btn-github {
+    background-color: #2563eb;
+    color: #fff;
+    padding: 9px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-github:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-live {
+    background-color: #16a34a;
+    color: #fff;
+    padding: 9px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-live:hover {
+    background-color: #15803d;
+}
