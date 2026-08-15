@@ -1,12 +1,12 @@
 import Projects from './components/Projects';
 import Hero from './components/Hero';
 import Education from './components/Education';
+import Navbar from './components/Navbar';
 function App() {
   return (
     <div>
-      <div className='hero'>
+      <Navbar/>
       <Hero/>
-      </div>
       <Education/>
       <Projects />
     </div>
