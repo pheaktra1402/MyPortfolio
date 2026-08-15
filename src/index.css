@@ -7,11 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-html {
-  scroll-behavior: smooth;
+html::-webkit-scrollbar {
+  display: none;
 }
-
 body {
   margin:0px 20px;
   padding: 0;

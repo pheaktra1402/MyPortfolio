@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './style/contact.css';
-
+import { FaTelegram, FaPhone, FaGithub, FaMapMarkerAlt } from 'react-icons/fa';
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -37,11 +37,21 @@ function Contact() {
           <p>I'm currently a third-year computer science student open to web development opportunities and collaborations.</p>
           
           <div className="info-item">
-            <span className="info-icon">📍</span>
+            <FaMapMarkerAlt className="info-icon" />
             <span>National Polytechnic Institute of Cambodia</span>
           </div>
           <div className="info-item">
-            <span className="info-icon">💻</span>
+            <FaPhone className="info-icon"/>
+            <a href="tel:+855965853087">+855 965 853 087</a>
+          </div>
+          <div className="info-item">
+            <FaTelegram className="info-icon"/>
+            <a href="https://t.me/pheaktrathorn" target="_blank" rel="noopener noreferrer">
+              t.me/pheaktrathorn
+            </a>
+          </div>
+          <div className="info-item">
+            <FaGithub className="info-icon"/>
             <a href="https://github.com/pheaktra1402" target="_blank" rel="noopener noreferrer">
               github.com/pheaktra1402
             </a>
