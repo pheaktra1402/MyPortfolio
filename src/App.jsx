@@ -1,18 +1,27 @@
-import Projects from './components/Projects';
+import React from 'react';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Education from './components/Education';
-import Navbar from './components/Navbar';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
+import './App.css';
+
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <Hero/>
-      <Education/>
-      <Projects />
-      <Skills/>
-      <Contact/>
+    <div className="app-container">
+      <div className="ambient-glow-1"></div>
+      <div className="ambient-glow-2"></div>
+      <Navbar />
+      <main>
+        <Hero />
+        <Education />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
