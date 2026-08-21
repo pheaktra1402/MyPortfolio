@@ -15,7 +15,7 @@ function Skills() {
       icon: <FaCode className="cat-icon" />,
       skills: [
         { name: "PHP", icon: <FaPhp />, level: "basic" },
-        { name: "JavaScript (ES6+)", icon: <FaJs />, level: "Intermediate" },
+        { name: "JavaScript", icon: <FaJs />, level: "basic" },
         { name: "Java", icon: <FaJava />, level: "Basic" },
         { name: "Python", icon: <FaPython />, level: "Basic" }
       ]
@@ -24,8 +24,8 @@ function Skills() {
       title: "Frontend Engineering",
       icon: <FaLayerGroup className="cat-icon" />,
       skills: [
-        { name: "HTML5", icon: <FaHtml5 />, level: "Advanced" },
-        { name: "CSS3 / Modern CSS", icon: <FaCss3Alt />, level: "Intermediate" },
+        { name: "HTML", icon: <FaHtml5 />, level: "Intermediate" },
+        { name: "CSS / Modern CSS", icon: <FaCss3Alt />, level: "Intermediate" },
         { name: "React", icon: <FaReact />, level: "Intermediate" },
         { name: "Bootstrap", icon: <FaBootstrap />, level: "Intermediate" },
         { name: "Tailwind CSS", icon: <FaCss3Alt />, level: "basic" }
@@ -53,10 +53,10 @@ function Skills() {
       title: "Developer Tools",
       icon: <FaTools className="cat-icon" />,
       skills: [
-        { name: "Git", icon: <FaGitAlt />, level: "Intermediate" },
+        { name: "Git", icon: <FaGitAlt />, level: "Basic" },
         { name: "GitHub", icon: <FaGithub />, level: "Intermediate" },
         { name: "Docker", icon: <FaDocker />, level: "Basic" },
-        { name: "VS Code", icon: <FaCode />, level: "Advanced" }
+        { name: "VS Code", icon: <FaCode />, level: "Intermediate" }
       ]
     },
     {

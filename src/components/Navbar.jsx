@@ -54,6 +54,9 @@ function Navbar() {
               <a href="#hero" className="nav-link" onClick={closeMenu}>Home</a>
             </li>
             <li className="nav-item">
+              <a href="#about" className="nav-link" onClick={closeMenu}>About</a>
+            </li>
+            <li className="nav-item">
               <a href="#education" className="nav-link" onClick={closeMenu}>Education</a>
             </li>
             <li className="nav-item">

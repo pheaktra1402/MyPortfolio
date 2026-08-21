@@ -88,7 +88,7 @@ function Contact() {
                 </div>
                 <div className="card-details">
                   <span className="card-label">Location</span>
-                  <strong className="card-value">ភូមិព្រៃពពេល, សង្កាត់សំរោងក្រោម, ខណ្ឌពោធិ៍សែនជ័យ, រាជធានីភ្នំពេញ</strong>
+                  <strong className="card-value">Phum Prey Popel, Sangkat Samrong Krom, Khan Por Sen Chey, Phnom Penh</strong>
                 </div>
               </div>
 
