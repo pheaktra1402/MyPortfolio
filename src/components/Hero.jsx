@@ -1,13 +1,16 @@
 import React from "react";
 import "./style/hero.css";
-import heroImg from "../assets/me.jpg";
+
 import {
   FaArrowRight,
   FaPaperPlane,
   FaGithub,
   FaTelegram,
 } from "react-icons/fa";
-import myCv from "../assets/Thorn_Chansopheaktra.png";
+
+
+const heroImg = "/me.JPG";
+const myCv = "/Thorn_Chansopheaktra.png";
 
 function Hero() {
   return (

@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import './style/project.css';
-import pypng from '../assets/p&p.png';
-import foodpng from '../assets/fooddash.png';
-import expensepng from '../assets/expense.png';
-import todo from '../assets/todo.png';
-import attendSystem from '../assets/attendanceSystem.png';
 import { FaGithub, FaExternalLinkAlt, FaCode } from 'react-icons/fa';
+
+const pypng = '/pandp.png';
+const foodpng = '/fooddash.png';
+const expensepng = '/expense.png';
+const todo = '/todo.png';
+const attendSystem = '/attendanceSystem.png';
 
 function Projects() {
   const [filter, setFilter] = useState("all");
