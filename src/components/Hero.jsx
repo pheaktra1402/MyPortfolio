@@ -2,7 +2,7 @@ import React from 'react';
 import './style/hero.css';
 import heroImg from '../assets/me.jpg'; 
 import { FaArrowRight, FaPaperPlane, FaGithub, FaTelegram } from 'react-icons/fa';
-import myCv from '../assets/Thorn_Chansopheaktra.jpg';
+import myCv from '../assets/Thorn_Chansopheaktra.png';
 
 function Hero() {
   return (
@@ -25,7 +25,7 @@ function Hero() {
           </h2>
 
           <p className="hero-description">
-            Passionate about crafting high-performance web applications, building robust RESTful APIs with PHP/Laravel, and bringing clean modern UI designs.
+            Specializing in web development. A fast learner and responsible developer ready for new challenges.
           </p>
 
           <div className="hero-actions">
