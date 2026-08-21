@@ -8,7 +8,6 @@ import {
   FaTelegram,
 } from "react-icons/fa";
 
-
 const heroImg = "/me.JPG";
 const myCv = "/Thorn_Chansopheaktra.png";
 

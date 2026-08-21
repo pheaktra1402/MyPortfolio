@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import './style/project.css';
-import { FaGithub, FaExternalLinkAlt, FaCode } from 'react-icons/fa';
+import "./style/project.css";
+import { FaGithub, FaExternalLinkAlt, FaCode } from "react-icons/fa";
 
-const pypng = '/pandp.png';
-const foodpng = '/fooddash.png';
-const expensepng = '/expense.png';
-const todo = '/todo.png';
-const attendSystem = '/attendanceSystem.png';
+const pypng = "/pandp.png";
+const foodpng = "/fooddash.png";
+const expensepng = "/expense.png";
+const todo = "/todo.png";
+const attendSystem = "/attendanceSystem.png";
 
 function Projects() {
   const [filter, setFilter] = useState("all");
@@ -22,7 +22,7 @@ function Projects() {
       tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
       github: "https://github.com/pheaktra1402/ProductWebsite",
       live: "https://product-website-murex-mu.vercel.app/",
-      image: pypng
+      image: pypng,
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ function Projects() {
       tech: ["Laravel", "PHP", "MySQL", "JavaScript", "Bootstrap"],
       github: "https://github.com/pheaktra1402/FoodDash",
       live: "https://fooddash-qxgq.onrender.com/",
-      image: foodpng
+      image: foodpng,
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ function Projects() {
       tech: ["Laravel", "PHP", "MySQL", "JavaScript", "Bootstrap"],
       github: "https://github.com/pheaktra1402/attendanceSystem",
       live: "https://fooddash-qxgq.onrender.com/",
-      image: attendSystem
+      image: attendSystem,
     },
     {
       id: 4,
@@ -58,7 +58,7 @@ function Projects() {
       tech: ["JavaScript", "HTML5", "CSS3", "Bootstrap"],
       github: "https://github.com/pheaktra1402/Expense_Tracker",
       live: "https://expense-tracker-black-theta-96.vercel.app/",
-      image: expensepng
+      image: expensepng,
     },
     {
       id: 4,
@@ -70,7 +70,7 @@ function Projects() {
       tech: ["JavaScript", "HTML5", "CSS3", "Bootstrap"],
       github: "https://github.com/pheaktra1402/Expense_Tracker",
       live: "https://expense-tracker-black-theta-96.vercel.app/",
-      image: expensepng
+      image: expensepng,
     },
     {
       id: 6,
@@ -82,13 +82,14 @@ function Projects() {
       tech: ["JavaScript", "HTML5", "CSS3"],
       github: "https://github.com/pheaktra1402/todo",
       live: "https://todo-ashen-eta.vercel.app/",
-      image: todo
-    }
+      image: todo,
+    },
   ];
 
-  const filteredProjects = filter === "all" 
-    ? projectLists 
-    : projectLists.filter(p => p.category === filter);
+  const filteredProjects =
+    filter === "all"
+      ? projectLists
+      : projectLists.filter((p) => p.category === filter);
 
   return (
     <section id="projects" className="projects-section">
@@ -96,32 +97,34 @@ function Projects() {
         <div className="section-title-wrapper">
           <span className="section-tag">Featured Work</span>
           <h2 className="section-title">My Recent Projects</h2>
-          <p className="section-subtitle">Real-world web applications and projects I've designed & built.</p>
+          <p className="section-subtitle">
+            Real-world web applications and projects I've designed & built.
+          </p>
         </div>
 
         {/* Filter Category Tabs */}
         <div className="project-filters">
-          <button 
-            className={`filter-btn ${filter === 'all' ? 'active' : ''}`}
-            onClick={() => setFilter('all')}
+          <button
+            className={`filter-btn ${filter === "all" ? "active" : ""}`}
+            onClick={() => setFilter("all")}
           >
             All Projects
           </button>
-          <button 
-            className={`filter-btn ${filter === 'fullstack' ? 'active' : ''}`}
-            onClick={() => setFilter('fullstack')}
+          <button
+            className={`filter-btn ${filter === "fullstack" ? "active" : ""}`}
+            onClick={() => setFilter("fullstack")}
           >
             Full-Stack / Laravel
           </button>
-          <button 
-            className={`filter-btn ${filter === 'frontend' ? 'active' : ''}`}
-            onClick={() => setFilter('frontend')}
+          <button
+            className={`filter-btn ${filter === "frontend" ? "active" : ""}`}
+            onClick={() => setFilter("frontend")}
           >
             Frontend & E-Commerce
           </button>
-          <button 
-            className={`filter-btn ${filter === 'utility' ? 'active' : ''}`}
-            onClick={() => setFilter('utility')}
+          <button
+            className={`filter-btn ${filter === "utility" ? "active" : ""}`}
+            onClick={() => setFilter("utility")}
           >
             Utilities & Web Apps
           </button>
@@ -137,21 +140,29 @@ function Projects() {
                   <span className="dot red"></span>
                   <span className="dot yellow"></span>
                   <span className="dot green"></span>
-                  <span className="browser-url">{project.title.toLowerCase().replace(/\s+/g, '')}.dev</span>
+                  <span className="browser-url">
+                    {project.title.toLowerCase().replace(/\s+/g, "")}.dev
+                  </span>
                 </div>
                 <div className="image-wrapper">
-                  <img src={project.image} alt={project.title} className="project-image" />
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="project-image"
+                  />
                 </div>
               </div>
-              
+
               {/* Card Details */}
               <div className="project-info">
                 <div className="project-meta">
-                  <span className="category-badge">{project.categoryLabel}</span>
+                  <span className="category-badge">
+                    {project.categoryLabel}
+                  </span>
                 </div>
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
-                
+
                 {/* Tech Badges */}
                 <div className="project-tech-stack">
                   {project.tech.map((t, idx) => (
@@ -163,19 +174,19 @@ function Projects() {
 
                 {/* Links */}
                 <div className="project-links">
-                  <a 
-                    href={project.github} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn-project btn-github"
                   >
                     <FaGithub /> Source Code
                   </a>
                   {project.live && (
-                    <a 
-                      href={project.live} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="btn-project btn-live"
                     >
                       <FaExternalLinkAlt /> Live Demo
