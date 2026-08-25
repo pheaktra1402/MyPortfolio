@@ -7,15 +7,15 @@ import {
   FaDocker, FaGlobe, FaCode, FaLayerGroup, 
   FaServer, FaTools 
 } from 'react-icons/fa';
-
+import { SiPostman } from 'react-icons/si';
 function Skills() {
   const skillCategories = [
     {
       title: "Programming Languages",
       icon: <FaCode className="cat-icon" />,
       skills: [
-        { name: "PHP", icon: <FaPhp />, level: "basic" },
-        { name: "JavaScript", icon: <FaJs />, level: "basic" },
+        { name: "PHP", icon: <FaPhp />, level: "Intermediate" },
+        { name: "JavaScript", icon: <FaJs />, level: "Intermediate" },
         { name: "Java", icon: <FaJava />, level: "Basic" },
         { name: "Python", icon: <FaPython />, level: "Basic" }
       ]
@@ -25,19 +25,19 @@ function Skills() {
       icon: <FaLayerGroup className="cat-icon" />,
       skills: [
         { name: "HTML", icon: <FaHtml5 />, level: "Intermediate" },
-        { name: "CSS / Modern CSS", icon: <FaCss3Alt />, level: "Intermediate" },
-        { name: "React", icon: <FaReact />, level: "Intermediate" },
+        { name: "CSS", icon: <FaCss3Alt />, level: "Intermediate" },
+        { name: "React", icon: <FaReact />, level: "Basic" },
         { name: "Bootstrap", icon: <FaBootstrap />, level: "Intermediate" },
-        { name: "Tailwind CSS", icon: <FaCss3Alt />, level: "basic" }
+        { name: "Tailwind CSS", icon: <FaCss3Alt />, level: "Basic" }
       ]
     },
     {
       title: "Backend & Frameworks",
       icon: <FaServer className="cat-icon" />,
       skills: [
-        { name: "Laravel", icon: <FaLaravel />, level: "Intermediate" },
-        { name: "PHP Core", icon: <FaPhp />, level: "basic" },
-        { name: "RESTful APIs", icon: <FaCode />, level: "basic" }
+        { name: "Laravel", icon: <FaLaravel />, level: "Basic" },
+        { name: "PHP Core", icon: <FaPhp />, level: "Intermediate" },
+        { name: "RESTful APIs", icon: <FaCode />, level: "Basic" }
       ]
     },
     {
@@ -54,9 +54,10 @@ function Skills() {
       icon: <FaTools className="cat-icon" />,
       skills: [
         { name: "Git", icon: <FaGitAlt />, level: "Basic" },
-        { name: "GitHub", icon: <FaGithub />, level: "Intermediate" },
+        { name: "GitHub", icon: <FaGithub />, level: "Basic" },
         { name: "Docker", icon: <FaDocker />, level: "Basic" },
-        { name: "VS Code", icon: <FaCode />, level: "Intermediate" }
+        { name: "VS Code", icon: <FaCode />, level: "Intermediate" },
+        { name: "Postman", icon: <SiPostman/>, level: "Intermediate" },
       ]
     },
     {

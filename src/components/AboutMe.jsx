@@ -81,7 +81,7 @@ function AboutMe() {
 
             {/* Core Values Badges */}
             <div className="bio-values">
-              <span className="value-badge"><FaCheckCircle /> Clean Code</span>
+              {/* <span className="value-badge"><FaCheckCircle /> Clean Code</span> */}
               <span className="value-badge"><FaCheckCircle /> User-Centric Design</span>
               <span className="value-badge"><FaCheckCircle /> Continuous Learning</span>
               <span className="value-badge"><FaCheckCircle /> Team Collaboration</span>

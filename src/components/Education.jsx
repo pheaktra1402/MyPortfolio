@@ -19,9 +19,10 @@ function Education() {
         "Comprehensive study of software engineering principles, algorithm design, full-stack web development (Laravel/React), database systems (MySQL), and computer networking.",
       courses: [
         "Web Architecture",
+        "Web development",
         "Database Systems",
-        "OOP with Java & PHP",
-        "Data Structures & Algorithms",
+        // "OOP with Java & PHP",
+        // "Data Structures & Algorithms",
       ],
     },
     {

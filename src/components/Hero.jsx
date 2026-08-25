@@ -1,16 +1,13 @@
 import React from "react";
 import "./style/hero.css";
-
+import heroImg from '../assets/me.jpg'
+import myCv from '../assets/Thorn_Chansopheaktra.png'
 import {
   FaArrowRight,
   FaPaperPlane,
   FaGithub,
   FaTelegram,
 } from "react-icons/fa";
-
-const heroImg = "/me.JPG";
-const myCv = "/Thorn_Chansopheaktra.png";
-
 function Hero() {
   return (
     <section id="hero" className="hero-section">
@@ -82,21 +79,21 @@ function Hero() {
           </div>
 
           {/* Floating Experience Badges */}
-          <div className="floating-badge badge-top">
+          {/* <div className="floating-badge badge-top">
             <span className="badge-icon">🎓</span>
             <div>
               <strong>3rd Year CS</strong>
               <small>@ NPIC Phnom Penh</small>
             </div>
-          </div>
+          </div> */}
 
-          <div className="floating-badge badge-bottom">
+          {/* <div className="floating-badge badge-bottom">
             <span className="badge-icon">🚀</span>
             <div>
               <strong>Web & Backend</strong>
               <small>Laravel / React / MySQL</small>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

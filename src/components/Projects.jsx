@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./style/project.css";
+import pypng from "../assets/pandp.png";
+import foodpng from "../assets/fooddash.png";
+import expensepng from "../assets/expense.png";
+import attendSystem from "../assets/attendanceSystem.png";
+import todo from "../assets/todo.png";
+
 import { FaGithub, FaExternalLinkAlt, FaCode } from "react-icons/fa";
-
-const pypng = "/pandp.png";
-const foodpng = "/fooddash.png";
-const expensepng = "/expense.png";
-const todo = "/todo.png";
-const attendSystem = "/attendanceSystem.png";
-
 function Projects() {
   const [filter, setFilter] = useState("all");
 
@@ -42,24 +41,24 @@ function Projects() {
       category: "fullstack",
       categoryLabel: "Full-Stack Web App",
       description:
-        "A dynamic food delivery and ordering web application built with a robust backend architecture, offering interactive food menus, category filters, and checkout workflows.",
-      tech: ["Laravel", "PHP", "MySQL", "JavaScript", "Bootstrap"],
+        "Student attendance tracking system with real-time status summaries (Present, Absent, Late) ",
+      tech: ["PHP", "MySQL", "Bootstrap"],
       github: "https://github.com/pheaktra1402/attendanceSystem",
-      live: "https://fooddash-qxgq.onrender.com/",
+      // live: "https://fooddash-qxgq.onrender.com/",
       image: attendSystem,
     },
-    {
-      id: 4,
-      title: "Personal Expense Tracker",
-      category: "utility",
-      categoryLabel: "Financial Utility",
-      description:
-        "An interactive personal finance application for logging daily income and expenses, organizing spending categories, and keeping track of budget totals.",
-      tech: ["JavaScript", "HTML5", "CSS3", "Bootstrap"],
-      github: "https://github.com/pheaktra1402/Expense_Tracker",
-      live: "https://expense-tracker-black-theta-96.vercel.app/",
-      image: expensepng,
-    },
+    // {
+    //   id: 4,
+    //   title: "Hotel Management System",
+    //   category: "fullstack",
+    //   categoryLabel: "Full-Stack Web App",
+    //   description:
+    //     "An interactive personal finance application for logging daily income and expenses, organizing spending categories, and keeping track of budget totals.",
+    //   tech: ["Laravel", "React", "MySQL"],
+    //   github: "https://github.com/pheaktra1402/Expense_Tracker",
+    //   live: "https://expense-tracker-black-theta-96.vercel.app/",
+    //   image: expensepng,
+    // },
     {
       id: 4,
       title: "Personal Expense Tracker",
@@ -85,7 +84,11 @@ function Projects() {
       image: todo,
     },
   ];
-
+  const threeDproject ={
+    id:1,
+    tittle: "Class Room",
+    image:todo,
+  }
   const filteredProjects =
     filter === "all"
       ? projectLists

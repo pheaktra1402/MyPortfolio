@@ -88,7 +88,7 @@ function Contact() {
                 </div>
                 <div className="card-details">
                   <span className="card-label">Location</span>
-                  <strong className="card-value">Phum Prey Popel, Sangkat Samrong Krom, Khan Por Sen Chey, Phnom Penh</strong>
+                  <strong className="card-value">Sangkat Samrong Krom, Khan Por Sen Chey, Phnom Penh</strong>
                 </div>
               </div>
 
