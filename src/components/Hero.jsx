@@ -14,10 +14,10 @@ function Hero() {
       <div className="hero-container">
         {/* Left Side: Content */}
         <div className="hero-content">
-          <div className="hero-badge">
+          {/* <div className="hero-badge">
             <span className="status-dot"></span>
             Available for Internship & Projects
-          </div>
+          </div> */}
 
           <span className="hero-greeting">Hello, I'm</span>
           <h1 className="hero-name">

@@ -36,7 +36,7 @@ function Skills() {
       icon: <FaServer className="cat-icon" />,
       skills: [
         { name: "Laravel", icon: <FaLaravel />, level: "Basic" },
-        { name: "PHP Core", icon: <FaPhp />, level: "Intermediate" },
+        { name: "PHP Core", icon: <FaPhp />, level: "Basic" },
         { name: "RESTful APIs", icon: <FaCode />, level: "Basic" }
       ]
     },
@@ -75,7 +75,7 @@ function Skills() {
     <section id="skills" className="skills-section">
       <div className="skills-container">
         <div className="section-title-wrapper">
-          <span className="section-tag">Technical Expertise</span>
+          {/* <span className="section-tag">Technical Expertise</span> */}
           <h2 className="section-title">Skills & Technologies</h2>
           <p className="section-subtitle">Languages, frameworks, databases, and developer tools I work with.</p>
         </div>

@@ -65,7 +65,7 @@ function Contact() {
     <section id="contact" className="contact-section">
       <div className="contact-container">
         <div className="section-title-wrapper">
-          <span className="section-tag">Get In Touch</span>
+          {/* <span className="section-tag">Get In Touch</span> */}
           <h2 className="section-title">Let's Connect & Collaborate</h2>
           <p className="section-subtitle">
             Have a question, job opportunity, or project idea? Feel free to reach out directly or send a message.

@@ -51,7 +51,7 @@ function Education() {
     <section id="education" className="education-section">
       <div className="education-container">
         <div className="section-title-wrapper">
-          <span className="section-tag">Academic Background</span>
+          {/* <span className="section-tag">Academic Background</span> */}
           <h2 className="section-title">Education</h2>
           <p className="section-subtitle">
             My academic journey and continuous skill development.

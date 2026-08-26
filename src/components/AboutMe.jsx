@@ -45,7 +45,7 @@ function AboutMe() {
       <div className="about-container">
         {/* Section Header */}
         <div className="section-title-wrapper">
-          <span className="section-tag">Get To Know Me</span>
+          {/* <span className="section-tag">Get To Know Me</span> */}
           <h2 className="section-title">
             About <span className="gradient-text">Me</span>
           </h2>

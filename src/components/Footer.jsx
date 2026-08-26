@@ -13,7 +13,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-top">
+        {/* <div className="footer-top">
           <div className="footer-brand">
             <a href="#hero" className="footer-logo">
               Pheaktra<span className="logo-dot">.</span>
@@ -57,11 +57,11 @@ function Footer() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="footer-bottom">
           <p className="footer-copyright">
-            © {new Date().getFullYear()} Thorn Chansopheaktra. Crafted with <FaHeart className="heart-icon" /> using React & Vite.
+            © {new Date().getFullYear()} Thorn Chansopheaktra. 
           </p>
           <button onClick={scrollToTop} className="scroll-top-btn" aria-label="Scroll to top">
             Back to Top <FaArrowUp />

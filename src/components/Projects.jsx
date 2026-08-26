@@ -98,7 +98,7 @@ function Projects() {
     <section id="projects" className="projects-section">
       <div className="projects-container">
         <div className="section-title-wrapper">
-          <span className="section-tag">Featured Work</span>
+          {/* <span className="section-tag">Featured Work</span> */}
           <h2 className="section-title">My Recent Projects</h2>
           <p className="section-subtitle">
             Real-world web applications and projects I've designed & built.
