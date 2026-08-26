@@ -1,6 +1,6 @@
 import React from "react";
 import "./style/hero.css";
-import heroImg from '../assets/me.jpg'
+import heroImg from '../assets/me.JPG'
 import myCv from '../assets/Thorn_Chansopheaktra.png'
 import {
   FaArrowRight,
