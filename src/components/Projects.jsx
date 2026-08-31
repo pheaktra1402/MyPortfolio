@@ -5,8 +5,9 @@ import foodpng from "../assets/fooddash.png";
 import expensepng from "../assets/expense.png";
 import attendSystem from "../assets/attendanceSystem.png";
 import todo from "../assets/todo.png";
-
+import classroom from "../assets/classroom3d.jpg";
 import { FaGithub, FaExternalLinkAlt, FaCode } from "react-icons/fa";
+
 function Projects() {
   const [filter, setFilter] = useState("all");
 
@@ -44,23 +45,10 @@ function Projects() {
         "Student attendance tracking system with real-time status summaries (Present, Absent, Late) ",
       tech: ["PHP", "MySQL", "Bootstrap"],
       github: "https://github.com/pheaktra1402/attendanceSystem",
-      // live: "https://fooddash-qxgq.onrender.com/",
       image: attendSystem,
     },
-    // {
-    //   id: 4,
-    //   title: "Hotel Management System",
-    //   category: "fullstack",
-    //   categoryLabel: "Full-Stack Web App",
-    //   description:
-    //     "An interactive personal finance application for logging daily income and expenses, organizing spending categories, and keeping track of budget totals.",
-    //   tech: ["Laravel", "React", "MySQL"],
-    //   github: "https://github.com/pheaktra1402/Expense_Tracker",
-    //   live: "https://expense-tracker-black-theta-96.vercel.app/",
-    //   image: expensepng,
-    // },
     {
-      id: 4,
+      id: 5,
       title: "Personal Expense Tracker",
       category: "utility",
       categoryLabel: "Financial Utility",
@@ -83,12 +71,18 @@ function Projects() {
       live: "https://todo-ashen-eta.vercel.app/",
       image: todo,
     },
+    {
+      id: 7,
+      title: "Classroom",
+      category: "3d", // Matches filter category
+      categoryLabel: "3D Modeling",
+      description:
+        "Classroom 3D environment modeled and rendered using Blender.",
+      tech: ["Blender"],
+      image: classroom,
+    },
   ];
-  const threeDproject ={
-    id:1,
-    tittle: "Class Room",
-    image:todo,
-  }
+
   const filteredProjects =
     filter === "all"
       ? projectLists
@@ -98,10 +92,9 @@ function Projects() {
     <section id="projects" className="projects-section">
       <div className="projects-container">
         <div className="section-title-wrapper">
-          {/* <span className="section-tag">Featured Work</span> */}
           <h2 className="section-title">My Recent Projects</h2>
           <p className="section-subtitle">
-            Real-world web applications and projects I've designed & built.
+            Real-world web applications and 3D designs I've created.
           </p>
         </div>
 
@@ -131,6 +124,12 @@ function Projects() {
           >
             Utilities & Web Apps
           </button>
+          <button
+            className={`filter-btn ${filter === "3d" ? "active" : ""}`}
+            onClick={() => setFilter("3d")}
+          >
+            3D Design
+          </button>
         </div>
 
         {/* Projects Grid */}
@@ -138,14 +137,21 @@ function Projects() {
           {filteredProjects.map((project) => (
             <div key={project.id} className="project-card">
               {/* Image Window Frame Header */}
-              <div className="project-image-container">
+              {/* Image Window Frame Header */}
+              <div
+                className={`project-image-container ${
+                  project.category === "3d" ? "is-3d" : ""
+                }`}
+              >
                 <div className="browser-header">
                   <span className="dot red"></span>
                   <span className="dot yellow"></span>
                   <span className="dot green"></span>
-                  <span className="browser-url">
-                    {project.title.toLowerCase().replace(/\s+/g, "")}.dev
-                  </span>
+                  {project.category !== "3d" && (
+                    <span className="browser-url">
+                      {project.title.toLowerCase().replace(/\s+/g, "")}.dev
+                    </span>
+                  )}
                 </div>
                 <div className="image-wrapper">
                   <img
@@ -168,23 +174,26 @@ function Projects() {
 
                 {/* Tech Badges */}
                 <div className="project-tech-stack">
-                  {project.tech.map((t, idx) => (
-                    <span key={idx} className="tech-tag">
-                      <FaCode className="tech-icon" /> {t}
-                    </span>
-                  ))}
+                  {project.tech &&
+                    project.tech.map((t, idx) => (
+                      <span key={idx} className="tech-tag">
+                        <FaCode className="tech-icon" /> {t}
+                      </span>
+                    ))}
                 </div>
 
                 {/* Links */}
                 <div className="project-links">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-project btn-github"
-                  >
-                    <FaGithub /> Source Code
-                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-project btn-github"
+                    >
+                      <FaGithub /> Source Code
+                    </a>
+                  )}
                   {project.live && (
                     <a
                       href={project.live}
