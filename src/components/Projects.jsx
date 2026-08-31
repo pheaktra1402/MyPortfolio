@@ -6,6 +6,7 @@ import expensepng from "../assets/expense.png";
 import attendSystem from "../assets/attendanceSystem.png";
 import todo from "../assets/todo.png";
 import classroom from "../assets/classroom3d.jpg";
+import videoclassroom from "../assets/democlassroom.mp4";
 import { FaGithub, FaExternalLinkAlt, FaCode } from "react-icons/fa";
 
 function Projects() {
@@ -79,6 +80,7 @@ function Projects() {
       description:
         "Classroom 3D environment modeled and rendered using Blender.",
       tech: ["Blender"],
+      live: videoclassroom,
       image: classroom,
     },
   ];
