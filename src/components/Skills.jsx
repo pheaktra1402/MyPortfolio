@@ -3,7 +3,7 @@ import './style/skills.css';
 import { DiIllustrator,DiPhotoshop } from "react-icons/di";
 import { SiBlender,SiPostman } from "react-icons/si"
 import { 
-  FaPhp, FaJs, FaJava, FaPython, FaPalette,
+  FaPhp, FaJs, FaJava, FaPython, FaPalette,FaDatabase,
   FaHtml5, FaCss3Alt, FaReact, FaBootstrap, 
   FaLaravel, FaGitAlt, FaGithub, 
   FaDocker, FaGlobe, FaCode, FaLayerGroup, 
@@ -53,6 +53,15 @@ function Skills() {
         { name: "Postman", icon: <SiPostman/>, level: "Intermediate" },
       ]
     }, 
+     {
+      title: "Database & Management",
+      icon: <FaDatabase className="cat-icon" />,
+      skills: [
+        { name: "MySQL", icon: <FaDatabase />, level: "Intermediate" },
+        { name: "phpMyAdmin", icon: <FaDatabase />, level: "Intermediate" },
+        { name: "Relational Design", icon: <FaDatabase />, level: "Intermediate" }
+      ]
+    },
     {
       title: "Design",
       icon: <FaPalette className="cat-icon" />,
@@ -62,15 +71,15 @@ function Skills() {
       { name: "Blender", icon: <SiBlender />, level: "basic" }
       ]
     },
-    {
-      title: "Languages",
-      icon: <FaGlobe className="cat-icon" />,
-      skills: [
-        { name: "Khmer (Native)", icon: <FaGlobe />, level: "Native" },
-        { name: "English (Working)", icon: <FaGlobe />, level: "Intermediate" },
-        { name: "Chinese (Beginner HSK1)", icon: <FaGlobe />, level: "Elementary" }
-      ]
-    }
+    // {
+    //   title: "Languages",
+    //   icon: <FaGlobe className="cat-icon" />,
+    //   skills: [
+    //     { name: "Khmer (Native)", icon: <FaGlobe />, level: "Native" },
+    //     { name: "English (Working)", icon: <FaGlobe />, level: "Intermediate" },
+    //     { name: "Chinese (Beginner HSK1)", icon: <FaGlobe />, level: "Elementary" }
+    //   ]
+    // }
   ];
 
   return (
@@ -79,7 +88,7 @@ function Skills() {
         <div className="section-title-wrapper">
           {/* <span className="section-tag">Technical Expertise</span> */}
           <h2 className="section-title">Skills & Technologies</h2>
-          <p className="section-subtitle">Languages, frameworks, databases, and developer tools I work with.</p>
+          {/* <p className="section-subtitle">Languages, frameworks, databases, and developer tools I work with.</p> */}
         </div>
 
         <div className="skills-grid">
