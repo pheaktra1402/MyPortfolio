@@ -1,13 +1,14 @@
 import React from 'react';
 import './style/skills.css';
+import { DiIllustrator,DiPhotoshop } from "react-icons/di";
+import { SiBlender,SiPostman } from "react-icons/si"
 import { 
-  FaPhp, FaJs, FaJava, FaPython, 
+  FaPhp, FaJs, FaJava, FaPython, FaPalette,
   FaHtml5, FaCss3Alt, FaReact, FaBootstrap, 
-  FaLaravel, FaDatabase, FaGitAlt, FaGithub, 
+  FaLaravel, FaGitAlt, FaGithub, 
   FaDocker, FaGlobe, FaCode, FaLayerGroup, 
   FaServer, FaTools 
 } from 'react-icons/fa';
-import { SiPostman } from 'react-icons/si';
 function Skills() {
   const skillCategories = [
     {
@@ -40,15 +41,7 @@ function Skills() {
         { name: "RESTful APIs", icon: <FaCode />, level: "Basic" }
       ]
     },
-    {
-      title: "Database & Management",
-      icon: <FaDatabase className="cat-icon" />,
-      skills: [
-        { name: "MySQL", icon: <FaDatabase />, level: "Intermediate" },
-        { name: "phpMyAdmin", icon: <FaDatabase />, level: "Intermediate" },
-        { name: "Relational Design", icon: <FaDatabase />, level: "Intermediate" }
-      ]
-    },
+   
     {
       title: "Developer Tools",
       icon: <FaTools className="cat-icon" />,
@@ -58,6 +51,15 @@ function Skills() {
         { name: "Docker", icon: <FaDocker />, level: "Basic" },
         { name: "VS Code", icon: <FaCode />, level: "Intermediate" },
         { name: "Postman", icon: <SiPostman/>, level: "Intermediate" },
+      ]
+    }, 
+    {
+      title: "Design",
+      icon: <FaPalette className="cat-icon" />,
+      skills: [
+      { name: "Adobe Photoshop", icon: <DiPhotoshop />, level: "Intermediate" },
+      { name: "Adobe Illustrator", icon: <DiIllustrator />, level: "basic" },
+      { name: "Blender", icon: <SiBlender />, level: "basic" }
       ]
     },
     {
