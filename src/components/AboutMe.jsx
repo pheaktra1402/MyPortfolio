@@ -37,7 +37,7 @@ function AboutMe() {
     { label: "Current Status", value: "3rd-Year CS Student" },
     { label: "University", value: "NPIC Phnom Penh" },
     { label: "Focus", value: "Web development" },
-    { label: "Availability", value: "Internship & Freelance" }
+    { label: "Availability", value: "Work & Freelance" }
   ];
 
   return (

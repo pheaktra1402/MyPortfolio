@@ -7,6 +7,8 @@ import attendSystem from "../assets/attendanceSystem.png";
 import todo from "../assets/todo.png";
 import classroom from "../assets/classroom3d.jpg";
 import videoclassroom from "../assets/democlassroom.mp4";
+import movieapp from "../assets/movieapp.png";
+import hoteladmindashboard from "../assets/hoteladmindashboard.png";
 import { FaGithub, FaExternalLinkAlt, FaCode } from "react-icons/fa";
 
 function Projects() {
@@ -15,18 +17,6 @@ function Projects() {
   const projectLists = [
     {
       id: 1,
-      title: "P&Y Skin Solution",
-      category: "frontend",
-      categoryLabel: "E-Commerce",
-      description:
-        "A modern skincare & cosmetics e-commerce platform featuring curated product categories, responsive showcase grids, and an intuitive online shopping experience.",
-      tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-      github: "https://github.com/pheaktra1402/ProductWebsite",
-      live: "https://product-website-murex-mu.vercel.app/",
-      image: pypng,
-    },
-    {
-      id: 2,
       title: "Food Dash Delivery",
       category: "fullstack",
       categoryLabel: "Full-Stack Web App",
@@ -38,7 +28,43 @@ function Projects() {
       image: foodpng,
     },
     {
+      id: 2,
+      title: "Movie App",
+      category: "frontend",
+      categoryLabel: "Frontend",
+      description:
+        "A dynamic movie search platform built with React, leveraging the TMDb API to display popular films, real-time search results, and high-quality posters.",
+      tech: ["React", "JavaScript", "HTML", "CSS", "TMDb API"],
+      github: "https://github.com/pheaktra1402/movieWebsite",
+      live: "https://pheaktra1402-movie-website.vercel.app/",
+      image: movieapp,
+    },
+    {
       id: 3,
+      title: "Hotel Admin Dashboard",
+      category: "fullstack",
+      categoryLabel: "Full-Stack Web App",
+      description:
+        "An administrative dashboard for hotel management featuring full CRUD operations for rooms, real-time room status tracking, and filtering capabilities.",
+      tech: ["Laravel", "PHP", "JavaScript", "CSS"],
+      github: "https://github.com/pheaktra1402/HotelAdminDashboard",
+      live: "https://hotel-admin-dashboard-eta.vercel.app/",
+      image: hoteladmindashboard,
+    },
+    {
+      id: 4,
+      title: "P&Y Skin Solution",
+      category: "frontend",
+      categoryLabel: "E-Commerce",
+      description:
+        "A modern skincare & cosmetics e-commerce platform featuring curated product and an intuitive online shopping experience.",
+      tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+      github: "https://github.com/pheaktra1402/ProductWebsite",
+      live: "https://product-website-murex-mu.vercel.app/",
+      image: pypng,
+    },
+    {
+      id: 5,
       title: "Attendance System",
       category: "fullstack",
       categoryLabel: "Full-Stack Web App",
@@ -49,7 +75,7 @@ function Projects() {
       image: attendSystem,
     },
     {
-      id: 5,
+      id: 6,
       title: "Personal Expense Tracker",
       category: "utility",
       categoryLabel: "Financial Utility",
@@ -61,7 +87,7 @@ function Projects() {
       image: expensepng,
     },
     {
-      id: 6,
+      id: 7,
       title: "Interactive Task Manager",
       category: "utility",
       categoryLabel: "Productivity App",
@@ -73,7 +99,7 @@ function Projects() {
       image: todo,
     },
     {
-      id: 7,
+      id: 8,
       title: "Classroom",
       category: "3d", // Matches filter category
       categoryLabel: "3D Modeling",
@@ -84,6 +110,9 @@ function Projects() {
       image: classroom,
     },
   ];
+  const design=[
+  {id=1,title: "", category:},
+  ]
 
   const filteredProjects =
     filter === "all"
