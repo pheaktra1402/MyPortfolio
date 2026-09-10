@@ -1,7 +1,7 @@
 import React from "react";
 import "./style/hero.css";
 import heroImg from '../assets/me.JPG'
-import myCv from '../assets/Thorn_Chansopheaktra.png'
+import myCv from '../assets/Thorn_Chansopheaktra.PNG'
 import {
   FaArrowRight,
   FaPaperPlane,
