@@ -1,6 +1,6 @@
 import "./style/hero.css";
 import heroImg from "../assets/me.PNG";
-import myCv from "../assets/Thorn_Chansopheaktra.PNG";
+import myCv from "../assets/cv.PNG";
 import {
   FaArrowRight,
   FaPaperPlane,
