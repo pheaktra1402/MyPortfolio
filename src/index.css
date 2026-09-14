@@ -30,6 +30,10 @@
   --badge-bg: rgba(99, 102, 241, 0.15);
   --badge-text: #818cf8;
   --badge-border: rgba(99, 102, 241, 0.3);
+
+  --section-pad-x: 24px;
+  --section-pad-y: 32px;
+  --section-gap-title: 24px;
 }
 
 [data-theme="light"] {
@@ -112,6 +116,10 @@ body {
   flex-direction: column;
 }
 
+main > section {
+  scroll-margin-top: 88px;
+}
+
 /* Code typography font */
 code, pre, .code-font {
   font-family: 'Fira Code', monospace;
@@ -120,7 +128,7 @@ code, pre, .code-font {
 /* Section Title Utility */
 .section-title-wrapper {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: var(--section-gap-title);
 }
 
 .section-tag {
@@ -158,4 +166,12 @@ code, pre, .code-font {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-pad-x: 16px;
+    --section-pad-y: 28px;
+    --section-gap-title: 18px;
+  }
 }

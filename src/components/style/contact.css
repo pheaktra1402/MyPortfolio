@@ -1,7 +1,5 @@
-/* src/components/style/contact.css */
-
 .contact-section {
-  padding: 90px 24px;
+  padding: var(--section-pad-y) var(--section-pad-x);
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
@@ -232,10 +230,6 @@
 }
 
 @media (max-width: 600px) {
-  .contact-section {
-    padding: 60px 16px;
-  }
-
   .contact-form-container {
     padding: 24px;
   }

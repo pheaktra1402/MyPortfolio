@@ -5,15 +5,17 @@
   flex-direction: column;
   position: relative;
   background-color: var(--bg-primary);
+  overflow-x: hidden; /* ការពារកុំឱ្យមានកន្លែងរុញហួសប្លង់ពេល Zoom Out */
 }
 
 /* Background ambient light effects */
 .ambient-glow-1 {
-  position: fixed;
+  position: absolute; /* ប្តូរពី fixed មក absolute ដើម្បីកុំឱ្យវារត់ហួសអេក្រង់ */
   top: -150px;
-  right: -100px;
-  width: 550px;
-  height: 550px;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  max-width: 40vw;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, rgba(0, 0, 0, 0) 70%);
   pointer-events: none;
@@ -21,16 +23,19 @@
 }
 
 .ambient-glow-2 {
-  position: fixed;
+  position: absolute; /* ប្តូរពី fixed មក absolute */
   bottom: 10%;
-  left: -150px;
-  width: 600px;
-  height: 600px;
+  left: 0;
+  width: 450px;
+  height: 450px;
+  max-width: 40vw;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(6, 182, 212, 0.08) 0%, rgba(0, 0, 0, 0) 70%);
   pointer-events: none;
   z-index: 0;
 }
-html{
+
+html {
   scroll-behavior: auto;
+  overflow-x: hidden; /* ទប់ស្កាត់ការធ្លាយកន្លែងសងខាងពេល Zoom */
 }

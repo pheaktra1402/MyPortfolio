@@ -1,12 +1,10 @@
-/* src/components/style/footer.css */
-
 .footer {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
   padding: 5px 24px 30px;
   position: relative;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 0;
 }
 
 .footer-container {

@@ -1,7 +1,5 @@
-/* src/components/style/project.css */
-
 .projects-section {
-  padding: 90px 24px;
+  padding: var(--section-pad-y) var(--section-pad-x);
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
@@ -399,9 +397,6 @@
 }
 
 @media (max-width: 600px) {
-  .projects-section {
-    padding: 60px 16px;
-  }
   .image-wrapper {
     height: 190px;
   }
