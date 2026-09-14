@@ -14,11 +14,6 @@ function Hero() {
       <div className="hero-container">
         {/* Left Side: Content */}
         <div className="hero-content">
-          {/* <div className="hero-badge">
-            <span className="status-dot"></span>
-            Available for Internship & Projects
-          </div> */}
-
           <span className="hero-greeting">Hello, I'm</span>
           <h1 className="hero-name">
             Thorn <span className="gradient-text">Chansopheaktra</span>
