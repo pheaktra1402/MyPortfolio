@@ -9,7 +9,9 @@ import profileImage from '../assets/persional.JPG'; // Update with your actual i
 function AboutMe() {
   return (
     <section id="about" className="about-section">
+      
       <div className="about-container">
+        
         {/* Section Header */}
         <div className="section-title-wrapper">
           <h2 className="section-title">
@@ -21,6 +23,16 @@ function AboutMe() {
         </div>
 
         <div className="about-content-wrapper">
+              {/* Right Column: Profile Image Card */}
+          <div className="about-sidebar">
+            <div className="about-image-card card-glass">
+              <img 
+                src={profileImage} 
+                alt="Thorn Chansopheaktra" 
+                className="about-profile-img" 
+              />
+            </div>
+          </div>
           {/* Left Column: Bio Card */}
           <div className="about-bio-card card-glass">
             <div className="bio-header">
@@ -53,16 +65,7 @@ function AboutMe() {
             </div>
           </div>
 
-          {/* Right Column: Profile Image Card */}
-          <div className="about-sidebar">
-            <div className="about-image-card card-glass">
-              <img 
-                src={profileImage} 
-                alt="Thorn Chansopheaktra" 
-                className="about-profile-img" 
-              />
-            </div>
-          </div>
+      
         </div>
       </div>
     </section>

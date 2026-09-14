@@ -1,5 +1,5 @@
 import "./style/hero.css";
-import heroImg from "../assets/me.JPG";
+import heroImg from "../assets/me.PNG";
 import myCv from "../assets/Thorn_Chansopheaktra.PNG";
 import {
   FaArrowRight,
@@ -72,22 +72,6 @@ function Hero() {
             />
           </div>
 
-          {/* Floating Experience Badges */}
-          {/* <div className="floating-badge badge-top">
-            <span className="badge-icon">🎓</span>
-            <div>
-              <strong>3rd Year CS</strong>
-              <small>@ NPIC Phnom Penh</small>
-            </div>
-          </div> */}
-
-          {/* <div className="floating-badge badge-bottom">
-            <span className="badge-icon">🚀</span>
-            <div>
-              <strong>Web & Backend</strong>
-              <small>Laravel / React / MySQL</small>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>
